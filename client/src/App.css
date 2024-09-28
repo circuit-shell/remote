@@ -1,0 +1,97 @@
+/* Disable text selection */
+.App {
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
+}
+
+/* Disable dragging on images and buttons */
+img,
+button {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.control-panel {
+  width: 100vw;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.d-pad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  width: 150px;
+  height: 150px;
+}
+
+.d-pad button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.d-pad button:hover {
+  background-color: #45a049;
+}
+
+.d-pad-up {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.d-pad-left {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.d-pad-center {
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: #45a049 !important;
+  cursor: default !important;
+}
+.d-pad-right {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.d-pad-down {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.action-buttons button {
+  padding: 10px;
+  background-color: #008cba;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.action-buttons button:hover {
+  background-color: #007b9a;
+}
+
+p {
+  margin-top: 20px;
+}
