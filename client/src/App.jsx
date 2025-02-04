@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import "./App.css";
 
-const API_URL = "http://192.168.3.102:8080"; // Replace with your actual local IP
+const API_URL = "http://192.168.1.101:8080"; // Replace with your actual local IP
 
 function App() {
   const [lastAction, setLastAction] = useState("No action yet");
