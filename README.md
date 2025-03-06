@@ -18,3 +18,8 @@ The server is written in Go using the `robotgo` package and the client is a simp
 - `cd remote-control-client`
 - npm install
 - npm run dev
+
+
+## Contributing
+
+Lol, no way you are reading this!
